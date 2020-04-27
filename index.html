@@ -53,6 +53,14 @@
 </div>
 <script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="static/h-ui/js/H-ui.js"></script>
-
+<script type="text/javascript">
+	window.addEventListener('resize', function () {
+     if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+        window.setTimeout(function () {
+          document.activeElement.scrollIntoViewIfNeeded()
+        }, 0)
+      }
+   })
+</script>
 </body>
 </html>

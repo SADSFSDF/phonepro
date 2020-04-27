@@ -34,11 +34,10 @@
     font-size: 14px;
     font-weight: bold;
     color: #fff;
-    margin-top: 37px;
-    position: absolute;
+    margin-top: 20%;
+    /*position: absolute;*/
     width: 90%;
-    left: 5%;
-    bottom: 10%;
+    margin-left: 5%;
 }
 .fontType1{
 	    font-size: 12px;
