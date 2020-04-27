@@ -48,7 +48,7 @@
 				</div>
 			</div>
 
-			<div class="btntype1">立即登录</div>
+			<div class="btntype1" id="login">立即登录</div>
 	</div>
 </div>
 <script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
@@ -62,6 +62,10 @@
 	        $('.btntype1').show();
 	    }
 	});
+
+	$("#login").on("click",function(){
+		window.location.href="index1.html";
+	})
 </script>
 </body>
 </html>
