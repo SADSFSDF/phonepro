@@ -63,3 +63,83 @@ html,body{
 	margin-bottom: 10px;
 	border-radius: 10px;
 }
+
+/*任务*/
+.work{
+	width: 100%;
+	height: 100%;
+	background:#ff984e;
+	position: relative;
+}
+.img4{
+	width: 22px;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+.workTop{
+	padding-top: 8px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	color: #fff;
+	overflow: hidden;
+}
+.w2{
+	font-size: 12px;
+	margin-top: 2px;
+}
+.workTopInner{
+	width: 24.9%;
+	display: inline-block;
+	float: left;
+	position: relative;
+	text-align: center;
+}
+.lines{
+	    width: 1px;
+    height: 26px;
+    background: #ffdead;
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+.workBottom{
+	    height: calc(100% - 115px);
+    height: -webkit-calc(100% - 115px);
+    background: #fff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-top: 10px;
+}
+.HuiTab{
+	color: #FF9D48!important;
+}
+.tabBar span{
+	width: 33.3%!important;
+	background:none!important;
+	text-align: center!important;
+	font-weight: normal!important;
+	font-size: 14px!important;
+	color: #323232!important;
+	padding-bottom:7px!important;
+}
+
+.tabBar span.current {
+    background-color: none!important;
+    color: #FF9D48!important;
+}
+.tabBar{
+	border-bottom: 1px solid #eae7ea!important;
+}
+.tabBar span.current {
+    border-bottom:1px solid  #FF9D48!important;
+}
+.img5{
+	height: 80px;
+	display: block;
+	margin:0 auto;
+	margin-top: 50px;
+}

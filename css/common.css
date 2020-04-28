@@ -112,3 +112,57 @@
 .middle{
 	vertical-align: middle;
 }
+.commonHeader{
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	line-height: 44px;
+	position: relative;
+}
+
+/*按钮样式*/
+.mui-switch {
+      width: 41px;
+    height: 21px;
+  position: relative;
+  border: 1px solid #dfdfdf;
+  background-color: #fdfdfd;
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  border-radius: 20px;
+  background-clip: content-box;
+  display: inline-block;
+  -webkit-appearance: none;
+  user-select: none;
+  outline: none; }
+  .mui-switch:before {
+    content: '';
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
+ .mui-switch:checked {
+    border-color: #ccc;
+    box-shadow: #fd5454 0 0 0 16px inset;
+    background-color: #fd5454;
+}
+    .mui-switch:checked:before {
+      left: 21px; }
+  .mui-switch.mui-switch-animbg {/*加过度效果*/
+    transition: background-color ease 0.4s; }
+    .mui-switch.mui-switch-animbg:before {
+      transition: left 0.3s; }
+   .mui-switch.mui-switch-animbg:checked {
+    box-shadow: #ccc 0 0 0 0 inset;
+    background-color: #ccc;
+    transition: border-color 0.4s, background-color ease 0.4s;
+}
+
+.clearfix:after{content:"\20";display:block;height:0;clear:both;visibility:hidden}.clearfix{zoom:1}
+.tabBar {border-bottom: 2px solid #222}
+.tabBar span {background-color: #e8e8e8;cursor: pointer;display: inline-block;float: left;font-weight: bold;height: 30px;line-height: 30px;padding: 0 15px}
+.tabBar span.current{background-color: #222;color: #fff}
+.tabCon {display: none}

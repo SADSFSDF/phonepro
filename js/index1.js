@@ -13,4 +13,7 @@ $(function(){
 		};
 
 	})
+
+	//tab2
+	$.Huitab("#tab_demo .tabBar span","#tab_demo .tabCon","current","click","1");
 })
