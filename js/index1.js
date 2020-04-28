@@ -1,4 +1,21 @@
 $(function(){
+	 var getUrlParam = function(name){
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r!=null) return unescape(r[2]); return null;
+    }; 
+    var current= (getUrlParam('curr'))
+    if(current!=null){
+    	$(".navScroll").each(function(){
+			$(this).hide();
+		})
+		$(".navScroll").eq(current).show();
+		$(".navlist").each(function(){
+			$(this).removeClass("navactive")
+		})
+		$(".navlist").eq(current).addClass("navactive");
+    }
+
 	//tab
 	$(".navlist").on("click",function(){
 		if(!$(this).hasClass("navactive")){
@@ -74,4 +91,27 @@ $(function(){
 
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
+
+
+        //跳转
+        $(".cfgl").on("click",function(){
+        	window.location.href="index2.html";
+        });
+
+
+
+        // 弹出框
+        $(".click1").click(function(){
+        	$(".hui_pop_box1").show();
+        })
+        $(".hui_pop_submit").on("click",function(){
+        	$(".hui_pop_box1").hide();
+        })
+
+         $(".click2").click(function(){
+        	$(".hui_pop_box2").show();
+        })
+        $(".hui_pop_submit2").on("click",function(){
+        	$(".hui_pop_box2").hide();
+        })
 })
