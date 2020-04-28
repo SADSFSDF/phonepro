@@ -7,3 +7,59 @@ html,body{
 	width: 100%;
 	height: 100%;
 }
+
+/*首页*/
+.indexshow{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.indexTop{
+	width: 100%;
+	height: 75px;
+	position: relative;
+	color: #fff;
+	font-size: 12px;
+}
+.img1{
+	width: 100%;
+	height:75px;
+}
+.img2{
+	width: 18px;
+	margin-right: 2px;
+}
+.indexTopRight{
+	float: right;
+}
+.w1{
+	margin-right: 7px;
+}
+.img3{
+	height: 12px;
+}
+.indexInner{
+	padding-left: 15px;
+	padding-right: 15px;
+	position: absolute;
+	top:18px;
+	width: 100%;
+}
+.indexBottom{
+	height: calc(100% - 55px);
+	height: -webkit-calc(100% - 55px);
+	background:#fff;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.indexBottom img {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
