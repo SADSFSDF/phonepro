@@ -16,4 +16,62 @@ $(function(){
 
 	//tab2
 	$.Huitab("#tab_demo .tabBar span","#tab_demo .tabCon","current","click","1");
+
+	//charts
+	// 基于准备好的dom，初始化echarts实例
+	$(".hui_chartContainer").width($(window).width()-40);
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+        	grid:{
+                  left:15,
+                  top:15,
+                  right:5,
+                  bottom:25
+	       },
+            xAxis: {
+                data: ["4/10","4/11","4/12","4/13","4/14","4/15","4/16"],
+          		axisLine: {
+			        lineStyle: {
+			            color: 'rgba(230,230,230,1)'
+			        }
+			    },
+			    axisLabel: {
+	                textStyle: {
+	                  color:'#969696'
+	                }
+	              }
+            },
+            yAxis: {
+            	axisLine: {
+			        lineStyle: {
+			            color: 'rgba(230,230,230,1)'
+			        }
+			    },
+			    axisLabel: {
+	                textStyle: {
+	                  color:'#969696'
+	                }
+	              }
+            },
+            series: [{
+                name: '销量',
+                type: 'bar',
+                barWidth:20,
+                data: [4, 8, 6, 4, 6, 5 ,10],
+				itemStyle: {
+                  normal: {
+                    color: new echarts.graphic.LinearGradient(
+                      0, 0, 0, 1,
+                    [
+                        {offset: 0, color: 'rgba(250,204,34,0.4)'},   
+                        {offset: 1, color: 'rgba(248,54,0,0.4)'}
+                    ]
+                 )}}
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
 })
