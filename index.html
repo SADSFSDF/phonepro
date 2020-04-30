@@ -13,7 +13,6 @@
 <link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
 <link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.min.css" />
 <link rel="stylesheet" type="text/css" href="css/index.css">
-<link rel="stylesheet" type="text/css" href="css/common.css">
 <!--[if lt IE 9]>
 <link href="static/h-ui/css/H-ui.ie.css" rel="stylesheet" type="text/css" />
 <![endif]-->
@@ -29,43 +28,43 @@
 <meta name="description" content="网站描述，字数尽量空制在80个汉字，160个字符以内！">
 </head>
 <body ontouchstart>
-<div class="wrap_container">
-	<img src="images/banner.jpg" class="logo_1">
-	<div class="login_container">
-			<div class="w1">欢迎登录 </div>
-			<div class="w2">SK支付4.0 </div>
-			<div class="inputWrapType1">
-				<div class="inputWrapType1Top">手机号 <font class="fontType1">*手机号输入有误</font></div>
-				<div class="inputWrapType1Bottom">
-					<input type="text" name="" class="input-text" placeholder="请输入手机号">
-				</div>
-			</div>
 
-			<div class="inputWrapType1">
-				<div class="inputWrapType1Top">登录密码</div>
-				<div class="inputWrapType1Bottom">
-					<input type="text" name="" class="input-text" placeholder="请输入密码">
+	<div class="wrap_container">
+		<img src="images/-s-dl_bg1@2x.png" class="hui_logoImg">
+		<div class="hui_formBox">
+			<h1>商户管理系统</h1>
+			<div class="huiTitle">SK支付3.0</div>
+			<form action="" id="form">
+				<div class="hui_inputWrap hui_middle" >
+					<img src="images/zhanghao@2x.png" class="hui_middle">
+					<input type="text" name="" class="input-text hui_middle" placeholder="请输入账号">
 				</div>
-			</div>
-
-			<div class="btntype1" id="login">立即登录</div>
+			
+				<div class="hui_inputWrap hui_middle" >
+					<img src="images/mima@2x.png" class="hui_middle">
+					<input type="text" name="" class="input-text hui_middle" placeholder="请输入密码">
+				</div>
+				<div class="hui_inputWrap hui_middle" >
+					<img src="images/yanzhengma@2x.png" class="hui_middle">
+					<input type="text" name="" class="input-text hui_middle" placeholder="请输入Google验证码">
+				</div>
+			</form>
+			<div class="hui_btn">登录</div>
+		</div>
 	</div>
-</div>
+
 <script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript">
 	var win_h = $(window).height();//关键代码
 	window.addEventListener('resize', function () {
 	    if($(window).height() < win_h){
-	        $('.btntype1').hide();
+	        $('.hui_btn').hide();
 	    }else{
-	        $('.btntype1').show();
+	        $('.hui_btn').show();
 	    }
 	});
-
-	$("#login").on("click",function(){
-		window.location.href="index1.html";
-	})
+	
 </script>
 </body>
 </html>

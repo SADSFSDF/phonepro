@@ -97,6 +97,10 @@ $(function(){
         $(".cfgl").on("click",function(){
         	window.location.href="index2.html";
         });
+        $(".fxzq").on("click",function(){
+            window.location.href="index4.html";
+        });
+
 
 
 

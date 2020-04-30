@@ -5,36 +5,81 @@ html,body{
 .wrap_container{
 	width: 100%;
 	height: 100%;
-	background:#fff;
+	background:#0d1028;
 	position: relative;
 }
-.w1{
-	font-size: 22px;
-    font-family: Source Han Sans SC;
-    font-weight: bold;
-    margin-bottom: 4px;
-    color: rgba(50,50,50,1);
-    text-align: center;
+.hui_logoImg{
+	width: 100%;
 }
-.w2{
-	font-size: 16px;
-    font-family: Source Han Sans SC;
-    font-weight: 400;
-    margin-bottom: 40px;
-    color: rgba(100,100,100,1);
-    text-align: center;
-}
-.login_container{
-	height: 70%;
-	background:#fff;
-	border-top-left-radius:25px;
-	border-top-right-radius:25px;
-	padding-top: 30px;
+.hui_formBox{
+	width: 100%;
+	height: 63%;
 	position: absolute;
-	bottom: 0;
-	width: 100%;
+	bottom: 0; 
 }
-.logo_1{
-	width: 100%;
-	height: 35%;
+.hui_middle{
+	vertical-align: middle;
+}
+.hui_inputWrap{
+	border-radius:40px; 
+	border:1px solid #444F7F;
+	margin-bottom: 15px;
+	padding-left: 18px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-left: 11px;
+	margin-right: 11px;
+}
+.hui_inputWrap img{
+	height: 18px;
+	margin-right: 5px;
+}
+.hui_inputWrap input{
+	border:none!important;
+	color: #fff;
+	width: 80%;
+	height: 24px;
+	background: none!important;
+	outline: none!important
+}
+
+::-webkit-input-placeholder{/*Webkit browsers*/
+　　color:#444F7F;
+}
+:-moz-placeholder{/*Mozilla Firefox 4 to 8*/
+　  color:#444F7F;
+}
+::moz-placeholder{/*Mozilla Firefox 19+*/
+　　　　color:#444F7F;
+}
+:-ms-input-placeholder{/*Internet Explorer 10+*/
+　　　　color:#444F7F;
+}
+.hui_btn{
+	    height: 43px;
+    /* margin-left: 15px; */
+    /* margin-right: 15px; */
+    background: #2662DE;
+    border-radius: 43px;
+    line-height: 43px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 37px;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 30px;
+}
+.huiTitle{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.hui_formBox h1{
+	    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 4px;
 }
